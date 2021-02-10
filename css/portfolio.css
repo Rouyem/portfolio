@@ -4,9 +4,8 @@
 
 body {
   margin: 0;
-  background-color: black;
+  background-color:rgb(20, 20, 20);
   color: white;
-  background-color: black;
   display: flex;
   justify-content: space-around;
 }
@@ -20,18 +19,20 @@ body {
 }
 h1 {
   font-size: 100px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, sans-serif;
   font-weight: normal;
 }
 h1::first-letter {
   font-weight: bold;
   font-size: 150px;
-  color: rgb(252, 115, 137);
+  color: rgb(32, 35, 211);
+}
+h2 {
+  font-size: 50px;
 }
 span {
   font-weight: bold;
   font-size: 150px;
-  color: rgb(252, 115, 137);
 }
 div {
   padding: 20px;
@@ -41,15 +42,32 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 700px;
+}
+.menu {
+  height: 100px;
   background-image: url(/portfolio/image/photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 300px;
+  transition: height 5s;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.menu:hover {
+  height: 750px;
+}
+#menu h2,span, a {
+  color:rgb(32, 35, 211) ;
+}
+#menu h2 {
+  margin-top: -2px;
+  margin-left: 75px;
+}
+li {
+  padding: 35px;
 }
 a {
   text-decoration: none;
-  color:rgb(252, 115, 137);
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500px;
@@ -57,7 +75,7 @@ a {
 hr {
   width: 50px;
   height: 3px;
-  background-color: rgb(252, 115, 137);
+  background-color: rgb(32, 35, 211);
   border: none;
 }
 .facebook img {
@@ -67,4 +85,8 @@ hr {
 .linkedin img{
   height: 100px;
   width: 100px;
+}
+.github img{
+  height: 90px;
+  width: 90px;
 }
